@@ -2,6 +2,7 @@ package javaClass;
  // 은행 계좌 클래스
 public class Account {
 		// 필드
+	static final String BANKNAME = "신한은행";
 	String accountNo; // 계좌번호 필드
 	String ownerName; // 예금주 이름 필드
 	int balance; // 잔액 필드
@@ -23,9 +24,9 @@ public class Account {
 		balance += amount;
 	}
 	//인출하는 메소드
-	int withdraw(int amount) {
+	int withdraw(int amount) throws Exception { 
 		if(balance < amount) {
-			return 0;
+			throw new Exception("잔액이 부족합니다.");
 			}
 		balance -= amount;
 		return amount;

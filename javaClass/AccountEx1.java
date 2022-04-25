@@ -4,6 +4,7 @@ public class AccountEx1 {
 
 	public static void main(String[] args) {
 
+		int amount = 0;
 		Account chulsu = new Account();
 		chulsu.accountNo = "111-222-3333";
 		chulsu.ownerName = "±èÃ¶¼ö";
@@ -16,9 +17,13 @@ public class AccountEx1 {
 		younghee.deposit(2000);
 		chulsu.deposit(300);
 		younghee.deposit(1000);
-		int amount = younghee.withdraw(500);
-		System.out.println("Ã£Àº ±Ý¾× = " + amount);
-		System.out.println("ÀÜ¾× = " + younghee.balance);
+		try {
+			amount = younghee.withdraw(10000);
+			System.out.println("Ã£Àº ±Ý¾× = " + amount);
+		}catch(Exception e) {
+			System.out.println(e.getMessage());
+			System.out.println("ÀÜ¾× : " + younghee.balance);
+		}
 	}
 
 }
