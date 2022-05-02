@@ -1,6 +1,6 @@
 package javaClass;
 
-public class Taxi extends Vehicle{
+public class Taxi implements Vehicle{
 
 	@Override
 	public void run() {
