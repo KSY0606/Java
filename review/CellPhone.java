@@ -19,9 +19,9 @@ public class CellPhone {
 		System.out.println("나 : " + message);
 	}
 	void receiveVoice(String message) {
-		System.out.println("상대방 :  + message");
+		System.out.println("상대방 :" + message);
 	}
-	void hanhUp() {
+	void hangUp() {
 		System.out.println("전화를 끊습니다.");
 	}
 }
