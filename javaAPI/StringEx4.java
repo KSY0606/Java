@@ -11,6 +11,8 @@ public class StringEx4 {
 		
 		//문자열 잘라내기 (substring)
 		String memo = "computer";
+		String test = memo.substring(0,3);
+		System.out.println(test);
 		System.out.println(memo.substring(3));
 		System.out.println(memo.substring(3, 6));
 	}

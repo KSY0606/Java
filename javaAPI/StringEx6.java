@@ -9,6 +9,7 @@ public class StringEx6 {
 		System.out.println(str);
 		System.out.println(newStr);
 		String str1 = String.valueOf(50); // 숫자를 문자로 바꿔줌
+		System.out.println(str1);
 	}
 
 }
