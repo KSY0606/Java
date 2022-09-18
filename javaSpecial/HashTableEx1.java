@@ -18,7 +18,7 @@ public class HashTableEx1 {
 			System.out.println("아이디와 비밀번호를 입력해주세요");
 			System.out.print("아이디 >> ");
 			String id = scan.next();
-			System.out.print("비밀번호 >> ");
+			System.out.print("비밀번호 >> "); 
 			String pw = scan.next();
 			if(map.containsKey(id)) {
 				if(map.get(id).equals(pw)) {
